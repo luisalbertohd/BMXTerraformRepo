@@ -2,7 +2,7 @@
 aws_region  = "us-east-1"
 aws_profile = "dev"
 
-bucket_name = "mi-app-dev-2026-08-12"
+bucket_name = "mi-app-dev-2026-08-20"
 tags = {
   Environment = "Development"
   Project     = "MiApp"
