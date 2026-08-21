@@ -56,8 +56,6 @@ jobs:
     name: 'Terraform'
     runs-on: 
       - self-hosted
-      - windows
-      - terraform
 
     environment: production
 
