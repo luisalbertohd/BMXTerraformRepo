@@ -30,10 +30,6 @@ jobs:
       run: terraform init
       shell: powershell
 
-    - name: Terraform Format
-      run: terraform fmt -check  || true
-      shell: powershell
-
     - name: Terraform Plan
       run: terraform plan -input=false
       shell: powershell
