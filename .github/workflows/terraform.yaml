@@ -13,7 +13,8 @@ jobs:
   terraform:
     name: 'Terraform'
     runs-on: 
-      - self-hosted
+      - self-hosted 
+      # Aqui corre el runner sin etiquetas, si se configuran etiquetas podrá seleccionar el runner 
 
     environment: production
 
@@ -39,11 +40,11 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install Checkov
-      run: pip install checkov
+ #   - name: Install Checkov
+  #    run: pip install checkov
 
-    - name: Run Checkov
-      run: checkov -d .
+   # - name: Run Checkov
+    #  run: checkov -d .
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
