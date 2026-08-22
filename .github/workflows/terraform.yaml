@@ -40,7 +40,7 @@ jobs:
       with:
         python-version: '3.x'
 
- #   - name: Install Checkov
+ #   - name: Install Checkov 
   #    run: pip install checkov
 
    # - name: Run Checkov
